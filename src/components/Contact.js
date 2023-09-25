@@ -5,7 +5,11 @@ function Contact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [isFieldEmpty, setIsFieldEmpty] = useState(false);
+    const [isFieldEmpty, setIsFieldEmpty] = useState({
+        name: false,
+        email: false,
+        message: false,
+    });
     const [isInvalidEmail, setIsInvalidEmail] = useState(false);
 
     // Handle form submission
@@ -19,7 +23,12 @@ function Contact() {
 
         // Check if any field is empty
         if (!name || !email || !message) {
-            setIsFieldEmpty(true);
+            setIsFieldEmpty((prevState) => ({
+                ...prevState,
+                name: !name,
+                email: !email,
+                message: !message,
+            }));
             return;
         }
 
@@ -31,7 +40,11 @@ function Contact() {
         }
 
         // Reset error states
-        setIsFieldEmpty(false);
+        setIsFieldEmpty({
+            name: false,
+            email: false,
+            message: false,
+        });
         setIsInvalidEmail(false);
         
         // Process the form data here
@@ -54,8 +67,10 @@ function Contact() {
                             id="name"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
+                            onBlur={() => handleBlur('name')}
                             required
                         />
+                        {isFieldEmpty.name && <p className="error-message">Name is required.</p>}
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
@@ -64,8 +79,11 @@ function Contact() {
                             id="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
+                            onBlur={() => handleBlur('email')}
                             required
                         />
+                        {isFieldEmpty.email && <p className="error-message">Email is required.</p>}
+                        {isInvalidEmail && <p className="error-message">Please enter a valid email.</p>}
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
@@ -75,6 +93,7 @@ function Contact() {
                             onChange={(e) => setMessage(e.target.value)}
                             required
                         />
+                        {isFieldEmpty.message && <p className="error-message">Message is required.</p>}
                     </div>
                     <button type="submit">Submit</button>
                 </form>
