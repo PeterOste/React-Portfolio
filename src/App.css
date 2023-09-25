@@ -1,0 +1,27 @@
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Add vertical padding to create space around the content */
+    text-align: center; /* Center-align text within the footer */
+}
+
+.footer-container {
+    display: flex; /* Use flexbox to center and evenly space child elements */
+    justify-content: space-around; /* Distribute child elements evenly with space between */
+    align-items: center; /* Vertically center-align child elements */
+}
+
+.footer-links {
+    display: flex; /* Use flexbox for links */
+    gap: 20px; /* Add horizontal spacing between links */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Text color for links */
+    font-weight: bold; /* Make links bold for better visibility */
+}
+
+.footer-links a:hover {
+    color: #f00; /* Change the text color on hover to highlight */
+}
