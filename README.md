@@ -34,6 +34,6 @@ The "Resume" section includes a link to view my resume. You will also find a lis
 At the bottom of the page, you will find links to my profiles on various platforms:
 - [GitHub](https://github.com/PeterOste)
 - [LinkedIn](https://www.linkedin.com/in/peter-ostertag-132597287/)
-
+- [YouTube](https://www.youtube.com/channel/UCGjunk2sW8mnMhqjUG8Ad8Q)
 
 Feel free to explore the portfolio and get in touch with me if you have any questions or would like to collaborate on a project. Thank you for visiting!
