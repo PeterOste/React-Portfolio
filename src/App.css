@@ -135,8 +135,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #d00;
 }
-  
-/* Responsive Styles */
+
   
 @media screen and (max-width: 768px) {
     .contact-container {
@@ -148,13 +147,13 @@ button[type="submit"]:hover {
 .blur-events {
     list-style: none;
     padding: 0;
-    margin-top: 10px; /* Add margin to separate from the form */
+    margin-top: 10px; 
 }
   
 .blur-events li {
-    color: #333; /* Change the color to match your design */
-    font-size: 14px; /* Adjust the font size as needed */
-    margin-top: 5px; /* Add spacing between each event */
+    color: #333;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 #resume {
