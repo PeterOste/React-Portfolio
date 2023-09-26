@@ -60,25 +60,20 @@ function Contact() {
 
 
     const handleBlur = (field) => {
-        let message = '';
-        switch (field) {
-          case 'name':
-            message = 'Name is required';
-            break;
-          case 'email':
-            message = 'Email is required';
-            break;
-          case 'Form submitted':
-              message = 'Form submitted';
-              break;
-          default:
-            message = 'Field is required';
-            break;
+        if (field === 'Form submitted') {
+          const newBlurEvents = [...blurEvents, 'Form submitted'];
+          setBlurEvents(newBlurEvents);
+        } else if (field === 'name') {
+          if (!name.trim()) {
+            const newBlurEvents = [...blurEvents, 'Name is required'];
+            setBlurEvents(newBlurEvents);
+          }
+        } else if (field === 'email') {
+          if (!email.trim()) {
+            const newBlurEvents = [...blurEvents, 'Email is required'];
+            setBlurEvents(newBlurEvents);
+          }
         }
-
-        const newBlurEvents = [...blurEvents, message];
-
-        setBlurEvents(newBlurEvents);
     };
 
     return (
