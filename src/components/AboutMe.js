@@ -15,7 +15,7 @@ function AboutMe() {
           <div className="about-me-content">
             <h2>About Me</h2>
             <p>
-              Hello, I'm a web developer that is passionate about creating web applications and learning new technologies.
+            Hello, I'm Peter, and I've recently ventured into the field of web development. I'm currently enrolled in a full-stack coding bootcamp. My focus is on creating web applications and staying updated with emerging technologies.
             </p>
           </div>
         </div>
