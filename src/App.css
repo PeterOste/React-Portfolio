@@ -39,6 +39,19 @@ header {
     color: #f00;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Create a flex container for your app */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
 footer {
     background-color: #333;
     color: #fff;
