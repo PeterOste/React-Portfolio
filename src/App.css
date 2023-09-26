@@ -1,27 +1,68 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+  
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+  
+.header-container h1 {
+    font-size: 24px;
+}
+  
+.header-container nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+  
+.header-container nav ul li {
+    margin: 0;
+    padding: 0;
+}
+  
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+  
+.header-container nav ul li a:hover {
+    color: #f00;
+}
+
 footer {
-    background-color: #333; /* Background color for the footer */
-    color: #fff; /* Text color for the footer */
-    padding: 20px 0; /* Add vertical padding to create space around the content */
-    text-align: center; /* Center-align text within the footer */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 .footer-container {
-    display: flex; /* Use flexbox to center and evenly space child elements */
-    justify-content: space-around; /* Distribute child elements evenly with space between */
-    align-items: center; /* Vertically center-align child elements */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-links {
-    display: flex; /* Use flexbox for links */
-    gap: 20px; /* Add horizontal spacing between links */
+    display: flex;
+    gap: 20px;
 }
 
 .footer-links a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #fff; /* Text color for links */
-    font-weight: bold; /* Make links bold for better visibility */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
 .footer-links a:hover {
-    color: #f00; /* Change the text color on hover to highlight */
+    color: #f00;
 }
