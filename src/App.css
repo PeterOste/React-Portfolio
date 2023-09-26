@@ -37,7 +37,7 @@ header {
 }
   
 .header-container nav ul li a {
-    display: inline-block; /* Ensures that all links occupy the same space */
+    display: inline-block;
     padding: 10px 20px; 
     text-decoration: none;
     color: #fff;
@@ -261,12 +261,18 @@ footer {
 }
 
 .footer-links a {
-    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333; /* Background color for the button */
     color: #fff;
+    text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .footer-links a:hover {
-    color: #f00;
+    background-color: #f00; /* Red background color on hover */
+    color: #fff; /* White text color on hover */
 }
 
