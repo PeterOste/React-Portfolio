@@ -91,6 +91,40 @@ html, body {
     margin-top: 20px;
 }
 
+.portfolio-container {
+    max-width: 800px; /* Adjust the maximum width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.portfolio-item a:hover {
+    background-color: #f00;
+}
+
+.portfolio-item img {
+    max-width: 200px; /* Adjust the max-width as needed */
+    max-height: 150px; /* Adjust the max-height as needed */
+    display: block; /* Ensure images don't affect surrounding elements */
+    margin: 0 auto; /* Center the images horizontally */
+}
+
 .route-container {
     display: flex;
     justify-content: center;
