@@ -60,7 +60,24 @@ function Contact() {
 
 
     const handleBlur = (field) => {
-        const newBlurEvents = [...blurEvents, `Blur event for field: ${field}`];
+        let message = '';
+        switch (field) {
+          case 'name':
+            message = 'Name is required';
+            break;
+          case 'email':
+            message = 'Email is required';
+            break;
+          case 'Form submitted':
+              message = 'Form submitted';
+              break;
+          default:
+            message = 'Field is required';
+            break;
+        }
+
+        const newBlurEvents = [...blurEvents, message];
+
         setBlurEvents(newBlurEvents);
     };
 
