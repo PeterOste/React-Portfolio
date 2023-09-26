@@ -15,7 +15,6 @@ function Resume() {
         <section id="resume">
             <div className="resume-container">
                 <h2>Resume</h2>
-                <p>Download my resume:</p>
                 <a href={resumeLink} target="_blank" rel="noopener noreferrer">Download Resume</a>
                 <h3>Proficiencies</h3>
                 <ul>
