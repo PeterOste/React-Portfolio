@@ -4,6 +4,11 @@ header {
     padding: 20px 0;
     text-align: center;
 }
+
+.active {
+    color: #f00; /* Your preferred color for highlighting */
+    /* Add any other styles you want for the active tab */
+}
   
 .header-container {
     display: flex;
@@ -254,3 +259,4 @@ footer {
 .footer-links a:hover {
     color: #f00;
 }
+
