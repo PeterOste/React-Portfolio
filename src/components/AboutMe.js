@@ -8,8 +8,8 @@ function AboutMe() {
             <img
               src="/Avatar.png"
               alt="Peter's Avatar"
-              width="200"
-              height="200"
+              width="300"
+              height="250"
             />
           </div>
           <div className="about-me-content">

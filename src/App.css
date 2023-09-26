@@ -45,6 +45,37 @@ html, body {
     padding: 0;
 }
 
+.about-me {
+    background-color: #f2f2f2; /* Light gray background */
+    padding: 50px;
+    text-align: center;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 75vh; /* Make the container fill the entire viewport height */
+}
+
+.about-me-image img {
+    border-radius: 50%; /* Make the image round */
+    border: 5px solid #fff; /* White border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.about-me-content h2 {
+    color: #333; /* Dark text color */
+    font-size: 30px;
+}
+
+.about-me-content p {
+    color: #555; /* Slightly darker text color */
+    font-size: 18px;
+    margin-top: 20px;
+}
+
 /* #root {
     display: flex;
     flex-direction: column;
