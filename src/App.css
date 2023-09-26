@@ -37,10 +37,13 @@ header {
 }
   
 .header-container nav ul li a {
+    display: inline-block; /* Ensures that all links occupy the same space */
+    padding: 10px 20px; 
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s;
+    border-radius: 5px;
+    transition: color 0.3s, color 0.3s;
 }
   
 .header-container nav ul li a:hover {
