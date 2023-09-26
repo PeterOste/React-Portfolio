@@ -6,8 +6,11 @@ header {
 }
 
 .active {
-    color: #f00; /* Your preferred color for highlighting */
-    /* Add any other styles you want for the active tab */
+    background-color: #f00;
+    color: #fff;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for better readability */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
 }
   
 .header-container {
@@ -41,7 +44,11 @@ header {
 }
   
 .header-container nav ul li a:hover {
-    color: #f00;
+    background-color: #f00;
+    color: #fff !important; /* !important to override previous styles */
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 html, body {
