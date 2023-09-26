@@ -11,6 +11,7 @@ function Contact() {
         message: false,
     });
     const [isInvalidEmail, setIsInvalidEmail] = useState(false);
+    const [blurEvents, setBlurEvents] = useState([]);
 
     // Handle form submission
     const handleSubmit = (e) => {
@@ -53,10 +54,18 @@ function Contact() {
         setName('');
         setEmail('');
         setMessage('');
+
+        handleBlur('Form submitted');
+    };
+
+
+    const handleBlur = (field) => {
+        const newBlurEvents = [...blurEvents, `Blur event for field: ${field}`];
+        setBlurEvents(newBlurEvents);
     };
 
     return (
-        <section id="contact">
+        <section id="contact" className="route-container">
             <div className="contact-container">
                 <h2>Contact Me</h2>
                 <form onSubmit={handleSubmit}>
@@ -69,6 +78,7 @@ function Contact() {
                             onChange={(e) => setName(e.target.value)}
                             onBlur={() => handleBlur('name')}
                             required
+                            className={isFieldEmpty.email || isInvalidEmail ? 'error' : ''}
                         />
                         {isFieldEmpty.name && <p className="error-message">Name is required.</p>}
                     </div>
@@ -92,11 +102,17 @@ function Contact() {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             required
+                            className={isFieldEmpty.message ? 'error' : ''}
                         />
                         {isFieldEmpty.message && <p className="error-message">Message is required.</p>}
                     </div>
                     <button type="submit">Submit</button>
                 </form>
+                <ul className="blur-events">
+                    {blurEvents.map((event, index) => (
+                        <li key={index}>{event}</li>
+                    ))}
+                </ul>
             </div>
         </section>
     );

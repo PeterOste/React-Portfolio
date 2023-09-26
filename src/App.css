@@ -56,7 +56,7 @@ html, body {
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
-    height: 75vh; /* Make the container fill the entire viewport height */
+    height: 50vh; /* Make the container fill the entire viewport height */
 }
 
 .about-me-image img {
@@ -74,6 +74,75 @@ html, body {
     color: #555; /* Slightly darker text color */
     font-size: 18px;
     margin-top: 20px;
+}
+
+.route-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(75vh - 120px); /* Adjust as needed to center vertically */
+}
+  
+.contact-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+  
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+.input-field.error {
+    border: 1px solid #f00;
+}
+  
+.error-message {
+    color: #f00;
+    margin-top: 5px;
+}
+  
+button[type="submit"] {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+button[type="submit"]:hover {
+    background-color: #d00;
+}
+  
+/* Responsive Styles */
+  
+@media screen and (max-width: 768px) {
+    .contact-container {
+      max-width: 100%;
+      padding: 10px;
+    }
 }
 
 #resume {
