@@ -72,6 +72,12 @@ function Contact() {
           if (!email.trim()) {
             const newBlurEvents = [...blurEvents, 'Email is required'];
             setBlurEvents(newBlurEvents);
+          } else {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.trim())) {
+                const newBlurEvents = [...blurEvents, 'Invalid email address'];
+                setBlurEvents(newBlurEvents);
+            }
           }
         }
     };
