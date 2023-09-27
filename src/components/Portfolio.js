@@ -4,22 +4,22 @@ function Portfolio() {
   // Define an array of project data
   const projects = [
     {
-      title: 'Weather Dashboard Project', // Title
-      imageUrl: 'WeatherDashboard.jpg', // Image URL for your project
-      deployedUrl: 'https://peteroste.github.io/Weather-Dashboard/', // Deployed application URL
-      githubUrl: 'https://github.com/PeterOste/Weather-Dashboard', // GitHub repository URL
+        title: 'Weather Dashboard', // Title
+        imageUrl: 'WeatherDashboard.jpg', // Image URL for your project
+        deployedUrl: 'https://peteroste.github.io/Weather-Dashboard/', // Deployed application URL
+        githubUrl: 'https://github.com/PeterOste/Weather-Dashboard', // GitHub repository URL
     },
     {
-      title: 'Project 2',
-    //   imageUrl: 'project2.jpg',
-    //   deployedUrl: 'https://example.com/project2',
-    //   githubUrl: 'https://github.com/yourusername/project2',
+        title: 'Note Taker',
+        imageUrl: 'NoteTaker.PNG',
+        deployedUrl: 'https://note-taker-8-4-2023-5e167a016793.herokuapp.com/',
+        githubUrl: 'https://github.com/PeterOste/Note-Taker',
     },
     {
-        title: 'Project 3',
-        // imageUrl: 'project2.jpg',
-        // deployedUrl: 'https://example.com/project2',
-        // githubUrl: 'https://github.com/yourusername/project2',
+        title: 'Work Day Scheduler',
+        imageUrl: 'WorkDayScheduler.png',
+        deployedUrl: 'https://peteroste.github.io/Work-Day-Scheduler/',
+        githubUrl: 'https://github.com/PeterOste/Work-Day-Scheduler',
     },
     {
         title: 'Project 4',
