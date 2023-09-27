@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Portfolio() {
-  // Define an array of project data
+  // Array of project data
   const projects = [
     {
         title: 'Weather Dashboard', // Title

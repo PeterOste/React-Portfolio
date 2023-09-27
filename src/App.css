@@ -92,7 +92,8 @@ html, body {
 }
 
 .portfolio-container {
-    max-width: 800px; /* Adjust the maximum width */
+    max-width: 90%; /* Adjust the maximum width */
+    overflow-x: auto;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
@@ -106,6 +107,9 @@ html, body {
 
 .portfolio-item {
     text-align: center;
+    box-sizing: border-box;
+    margin: 100px; /* Add space around each project */
+    flex: 0 0 calc(33.33% - 40px);
 }
 
 .portfolio-item a {
@@ -189,9 +193,6 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #d00;
 }
-
-
-
   
 @media screen and (max-width: 768px) {
     .contact-container {
@@ -317,3 +318,13 @@ footer {
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+    .portfolio-items {
+        margin: 10px 0; /* Adjust space for smaller screens */
+    }
+    
+    .portfolio-item {
+        margin: 10px; /* Adjust space for smaller screens */
+        flex: 0 0 calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+}
