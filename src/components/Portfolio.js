@@ -22,22 +22,22 @@ function Portfolio() {
         githubUrl: 'https://github.com/PeterOste/Work-Day-Scheduler',
     },
     {
-        title: 'Project 4',
-        // imageUrl: 'project2.jpg',
-        // deployedUrl: 'https://example.com/project2',
-        // githubUrl: 'https://github.com/yourusername/project2',
+        title: 'Code Quiz',
+        imageUrl: 'CodeQuiz.png',
+        deployedUrl: 'https://peteroste.github.io/Code-Quiz/',
+        githubUrl: 'https://github.com/PeterOste/Code-Quiz',
     },
     {
-        title: 'Project 5',
-        // imageUrl: 'project2.jpg',
-        // deployedUrl: 'https://example.com/project2',
-        // githubUrl: 'https://github.com/yourusername/project2',
+        title: 'Password Generator',
+        imageUrl: 'PasswordGenerator.png',
+        deployedUrl: 'https://peteroste.github.io/Password-Generator/',
+        githubUrl: 'https://github.com/PeterOste/Password-Generator',
     },
     {
-        title: 'Project 6',
-        // imageUrl: 'project2.jpg',
-        // deployedUrl: 'https://example.com/project2',
-        // githubUrl: 'https://github.com/yourusername/project2',
+        title: 'Professional README Generator',
+        imageUrl: 'ProfessionalREADMEGenerator.png',
+        deployedUrl: 'https://peteroste.github.io/Professional-README-Generator/',
+        githubUrl: 'https://github.com/PeterOste/Professional-README-Generator',
     },
   ];
 
@@ -58,6 +58,7 @@ function Portfolio() {
                   GitHub Repository
                 </a>
               </div>
+              {index < projects.length - 1 && <div className="portfolio-divider"></div>}
             </div>
           ))}
         </div>
