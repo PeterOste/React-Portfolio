@@ -128,10 +128,10 @@ html, body {
 }
 
 .portfolio-item img {
-    max-width: 200px; /* Adjust the max-width as needed */
-    max-height: 150px; /* Adjust the max-height as needed */
-    display: block; /* Ensure images don't affect surrounding elements */
-    margin: 0 auto; /* Center the images horizontally */
+    max-width: 200px;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
 .route-container {

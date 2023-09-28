@@ -5,7 +5,7 @@ function Portfolio() {
   const projects = [
     {
         title: 'Weather Dashboard', // Title
-        imageUrl: 'WeatherDashboard.jpg', // Image URL for your project
+        imageUrl: 'WeatherDashboard.jpg', // Image URL for project
         deployedUrl: 'https://peteroste.github.io/Weather-Dashboard/', // Deployed application URL
         githubUrl: 'https://github.com/PeterOste/Weather-Dashboard', // GitHub repository URL
     },
